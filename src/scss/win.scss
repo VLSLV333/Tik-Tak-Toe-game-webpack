@@ -1,0 +1,48 @@
+@mixin win-line {
+  content: " ";
+  width: 100%;
+  position: absolute;
+  background: #ffd500;
+  padding: 3px;
+}
+
+@mixin win-css {
+  color: #b20942;
+  position: relative;
+}
+
+.win,
+.win2,
+.win3,
+.win4 {
+  @include win-css;
+}
+
+.win:before {
+  @include win-line;
+  top: 50%;
+  left: -1px;
+}
+
+.win2:before {
+  @include win-line;
+  transform: rotate(90deg);
+  top: 47%;
+  left: -2.5px;
+}
+
+.win3:before {
+  @include win-line;
+  width: 142%;
+  transform: rotate(45deg);
+  top: 47%;
+  left: -23%;
+}
+
+.win4:before {
+  @include win-line;
+  width: 142%;
+  transform: rotate(-45deg);
+  top: 47%;
+  left: -22%;
+}

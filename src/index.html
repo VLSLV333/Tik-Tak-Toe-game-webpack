@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>JS Modules</title>
+      <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+  </head>
+  <body>
+    <div class="players">
+      <p class="x"></p>
+      <p class="o"></p>
+   </div>
+    <div class="scores">
+      <p id="xScore">Player X score: 0</p>
+      <p id="oScore">Player O score: 0</p>
+   </div>
+    <div class="buttons">
+      <button id="newG">New Game</button>
+      <button id="reset" onClick="window.location.reload();">Reset</button>
+   </div>
+    <table>
+      <tr class="botLine">
+        <td class="ritLine btn row1 row4 diag1">
+      </td>
+        <td class="ritLine btn row1 row5">
+        </td>
+        <td class="btn row1 row6 diag2">
+        </td>
+      </tr>
+      <tr class="botLine">
+        <td class="ritLine btn row2 row4">
+        </td>
+        <td class="ritLine btn row2 row5 diag1 diag2">
+        </td>
+        <td class="btn row2 row6">
+        </td>
+      </tr>
+      <tr>
+        <td class="ritLine btn row3 row4 diag2">
+        </td>
+        <td class="ritLine btn row3 row5">
+        </td>
+        <td class="btn row3 row6 diag1">
+        </td>
+      </tr>
+    </table>
+    <div class="scores">
+      <p class="visible" id="message">Message</p>
+    </div>
+  </body>
+</html>
